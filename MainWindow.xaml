@@ -1,0 +1,59 @@
+﻿<Window x:Class="test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        mc:Ignorable="d"
+        Title="MRE" SizeToContent="WidthAndHeight">
+    <DataGrid ItemsSource="{Binding TableObjects}" AutoGenerateColumns="False" >
+        <DataGrid.Columns>
+            <DataGridCheckBoxColumn Header="Test1" Binding="{Binding Test1, Mode=TwoWay}">
+                <DataGridCheckBoxColumn.ElementStyle>
+                    <Style TargetType="CheckBox">
+                        <Style.Setters>
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </Style.Setters>
+                    </Style>
+                </DataGridCheckBoxColumn.ElementStyle>
+            </DataGridCheckBoxColumn>
+            <DataGridCheckBoxColumn Header="Test2" Binding="{Binding Test2, Mode=TwoWay}">
+                <DataGridCheckBoxColumn.ElementStyle>
+                    <Style TargetType="CheckBox">
+                        <Style.Setters>
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </Style.Setters>
+                    </Style>
+                </DataGridCheckBoxColumn.ElementStyle>
+            </DataGridCheckBoxColumn>
+            <DataGridCheckBoxColumn Header="Test3" Binding="{Binding Test3, Mode=TwoWay}">
+                <DataGridCheckBoxColumn.ElementStyle>
+                    <Style TargetType="CheckBox">
+                        <Style.Setters>
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </Style.Setters>
+                    </Style>
+                </DataGridCheckBoxColumn.ElementStyle>
+            </DataGridCheckBoxColumn>
+            <DataGridCheckBoxColumn Header="Test4" Binding="{Binding Test4, Mode=TwoWay}">
+                <DataGridCheckBoxColumn.ElementStyle>
+                    <Style TargetType="CheckBox">
+                        <Style.Setters>
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </Style.Setters>
+                    </Style>
+                </DataGridCheckBoxColumn.ElementStyle>
+            </DataGridCheckBoxColumn>
+            <DataGridCheckBoxColumn Header="Test5" Binding="{Binding Test5, Mode=TwoWay}">
+                <DataGridCheckBoxColumn.ElementStyle>
+                    <Style TargetType="CheckBox">
+                        <Style.Setters>
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </Style.Setters>
+                    </Style>
+                </DataGridCheckBoxColumn.ElementStyle>
+            </DataGridCheckBoxColumn>
+        </DataGrid.Columns>
+    </DataGrid>
+
+</Window>
